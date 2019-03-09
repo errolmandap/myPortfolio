@@ -6,6 +6,7 @@
 
 html{
   font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .highlight{
@@ -28,7 +29,7 @@ html{
   background-size: cover;
   background-position: 55%;
   width: 100%;
-  height: 84vh;
+  height: 100vh;
   font-weight: 200;
   font-size: 0.9rem;
 }
@@ -91,7 +92,7 @@ a{
 
 #name{
   color: #eee;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .name-description{
@@ -111,23 +112,6 @@ a{
 .nav-links li{
   display: none;
   margin-right: 1rem;
-}
-
-.icon-arrowdown{
-  border: 0px;
-  border-radius: 50%;
-  background-color: white;
-  padding: 1rem;
-  position: relative;
-  bottom: 4vh;
-  left: 43.5vw;
-  box-shadow: 0px 5px 8px -4px #555;
-  transition: 0.2s ease-in;
-  cursor: pointer;
-}
-
-.icon-arrowdown:hover{
-  transform: scale(1.2);
 }
 
 #arrowdown path{
@@ -610,10 +594,6 @@ label{
     width: 28px;
     height: 28px;
   }
-  .icon-arrowdown{
-    bottom: 4.5vh;
-    left: 50vw;
-  }
   /* About Section */
   #section-about{
     width: 80%;
@@ -657,10 +637,12 @@ label{
     height: 216px;
   }
   /* Contact Section */
+  #section-contact{
+    height: 100vh;
+  }
   .contact-box{
-    margin: 4rem auto 5rem auto;
+    margin: 4rem auto;
     width: 35rem;
-    height: 4rem;
   }
   .contact-text{
     font-size: 1.8rem;
